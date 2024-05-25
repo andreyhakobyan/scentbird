@@ -1,0 +1,39 @@
+version: 2
+
+models:
+  - name: cleaned_orders
+    description: "Stores processed data pertaining to `orders`."
+    config:
+      schema: public_ahakobyan
+      materialized: view
+    columns:
+      - name: id
+        tests:
+          - unique:
+              name: "`cleaned_orders.id` values are unique."
+      - name: amount
+        tests:
+          - not_null:
+              name: "`cleaned_orders.amount` doesn't contain NULL."
+
+  - name: revenue_report
+    description: "Captures the total revenue earned by the company for each month."
+    config:
+      schema: public_ahakobyan
+      materialized: table
+      columns:
+        - name: report_date
+          description: "Represents the first day of the month for which the revenue is being reported."
+        - name: total_amount
+          description: "Represents the total amount of revenue earned in the respective month."
+
+  - name: deferred_revenue_report
+    description: "Tracks the deferred revenue for each month, which is the difference between the revenue taken and when the goods are shipped."
+    config:
+      schema: public_ahakobyan
+      materialized: table
+      columns:
+        - name: report_date
+          description: "Represents the first day of the month for which the deferred revenue is being reported."
+        - name: total_amount
+          description: "Represents the total amount of deferred revenue for the respective month."

@@ -1,0 +1,2 @@
+yamllint==1.35.1
+dbt-postgres==1.7.11

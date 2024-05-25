@@ -1,0 +1,13 @@
+**/*venv*/
+target/
+dbt_packages/
+logs/
+.vscode/
+__pycache__/
+.idea/
+.ipynb_checkpoints/
+
+profiles.yml
+**/**.DS_store
+.user.yml
+package-lock.yml
