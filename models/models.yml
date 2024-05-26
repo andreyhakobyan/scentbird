@@ -37,3 +37,9 @@ models:
           description: "Represents the first day of the month for which the deferred revenue is being reported."
         - name: total_amount
           description: "Represents the total amount of deferred revenue for the respective month."
+
+  - name: cumulative_deferred_revenue
+    description: "Total of all such advance payments that have not yet been recognized as actual revenue because the orders have not been provided."
+    config:
+      schema: public_ahakobyan
+      materialized: view
