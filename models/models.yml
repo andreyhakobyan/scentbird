@@ -38,8 +38,24 @@ models:
         - name: total_amount
           description: "Represents the total amount of deferred revenue for the respective month."
 
-  - name: cumulative_deferred_revenue
+  - name: daily_deferred_revenue_report
     description: "Total of all such advance payments that have not yet been recognized as actual revenue because the orders have not been provided."
     config:
       schema: public_ahakobyan
       materialized: view
+      columns:
+        - name: report_date
+          description: "Represents the day of the month for which the deferred revenue is being reported."
+        - name: total_amount
+          description: "Represents the total amount of deferred revenue for the respective day."
+
+  - name: marketing_conversion_report
+    description: "Revenue reporting for marketing companies."
+    config:
+      schema: public_ahakobyan
+      materialized: view
+      columns:
+        - name: campaign_name
+          description: "The name of campaign."
+        - name: total_revenue
+          description: "Revenue brought by marketing companies."
