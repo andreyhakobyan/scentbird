@@ -53,7 +53,7 @@ models:
     description: "Revenue reporting for marketing companies."
     config:
       schema: public_ahakobyan
-      materialized: view
+      materialized: table
       columns:
         - name: campaign_name
           description: "The name of campaign."
