@@ -59,6 +59,14 @@ dbt debug
 ```
 
 
+# Reports
+### Monthly Deferred Revenue Report
+![](./images/Monthly Deferred Revenue Report.png)
+### Monthly Cumulative Deferred Revenue Report
+![](./images/Monthly Cumulative Deferred Revenue Report.png)
+### Monthly Receivable Aging Report
+![](./images/Monthly Receivable Aging Report.png)
+
 ### Documentations
 * [dbt documentation](https://docs.getdbt.com/)
 * [SQLFluff documentation](https://docs.sqlfluff.com/en/stable/configuration.html)
