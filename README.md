@@ -61,11 +61,11 @@ dbt debug
 
 # Reports
 ### Monthly Deferred Revenue Report
-![](./images/Monthly Deferred Revenue Report.png)
+![](images/Monthly Deferred Revenue Report.png)
 ### Monthly Cumulative Deferred Revenue Report
-![](./images/Monthly Cumulative Deferred Revenue Report.png)
+![](images/Monthly Cumulative Deferred Revenue Report.png)
 ### Monthly Receivable Aging Report
-![](./images/Monthly Receivable Aging Report.png)
+![](images/Monthly Receivable Aging Report.png)
 
 ### Documentations
 * [dbt documentation](https://docs.getdbt.com/)
